@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="rate_marriage <= 3.5\ngini = 0.437\nsamples = 6366\nvalue = [4313, 2053]\nclass = H", fillcolor="#e5813986"] ;
+1 [label="yrs_married <= 4.25\ngini = 0.4856\nsamples = 1440\nvalue = [598, 842]\nclass = a", fillcolor="#399de54a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="yrs_married <= 1.5\ngini = 0.4959\nsamples = 387\nvalue = [211, 176]\nclass = H", fillcolor="#e581392a"] ;
+1 -> 2 ;
+3 [label="gini = 0.2571\nsamples = 33\nvalue = [28, 5]\nclass = H", fillcolor="#e58139d1"] ;
+2 -> 3 ;
+4 [label="gini = 0.4994\nsamples = 354\nvalue = [183, 171]\nclass = H", fillcolor="#e5813911"] ;
+2 -> 4 ;
+5 [label="rate_marriage <= 2.5\ngini = 0.4649\nsamples = 1053\nvalue = [387, 666]\nclass = a", fillcolor="#399de56b"] ;
+1 -> 5 ;
+6 [label="gini = 0.4176\nsamples = 340\nvalue = [101, 239]\nclass = a", fillcolor="#399de593"] ;
+5 -> 6 ;
+7 [label="gini = 0.4804\nsamples = 713\nvalue = [286, 427]\nclass = a", fillcolor="#399de554"] ;
+5 -> 7 ;
+8 [label="yrs_married <= 4.25\ngini = 0.3708\nsamples = 4926\nvalue = [3715, 1211]\nclass = H", fillcolor="#e58139ac"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="rate_marriage <= 4.5\ngini = 0.2384\nsamples = 2017\nvalue = [1738, 279]\nclass = H", fillcolor="#e58139d6"] ;
+8 -> 9 ;
+10 [label="gini = 0.3144\nsamples = 824\nvalue = [663, 161]\nclass = H", fillcolor="#e58139c1"] ;
+9 -> 10 ;
+11 [label="gini = 0.1783\nsamples = 1193\nvalue = [1075, 118]\nclass = H", fillcolor="#e58139e3"] ;
+9 -> 11 ;
+12 [label="rate_marriage <= 4.5\ngini = 0.4355\nsamples = 2909\nvalue = [1977, 932]\nclass = H", fillcolor="#e5813987"] ;
+8 -> 12 ;
+13 [label="gini = 0.4788\nsamples = 1418\nvalue = [855, 563]\nclass = H", fillcolor="#e5813957"] ;
+12 -> 13 ;
+14 [label="gini = 0.3725\nsamples = 1491\nvalue = [1122, 369]\nclass = H", fillcolor="#e58139ab"] ;
+12 -> 14 ;
+}
